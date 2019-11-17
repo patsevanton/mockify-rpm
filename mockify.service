@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=mockify
 Group=mockify
-Environment="MOCKIFY_ROUTES=/etc/mockify/routes.json"
+Environment="MOCKIFY_ROUTES=/etc/mockify/routes.yaml"
 ExecStart=/usr/bin/mockify
 ExecStop=/bin/kill -s SIGTERM $MAINPID
 ExecReload=/bin/kill -HUP $MAINPID
