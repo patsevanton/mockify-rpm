@@ -36,7 +36,7 @@ install -p -m 0755 mockify %{buildroot}%{_bindir}/mockify
 install -d %{buildroot}/etc/mockify
 ls
 pwd
-cp %{SOURCE1} %{buildroot}%{buildroot}/etc/mockify/routes.yaml
+cp %{SOURCE1} %{buildroot}/etc/mockify/routes.yaml
 %if %{use_systemd}
 %{__mkdir} -p %{buildroot}%{_unitdir}
 %{__install} -m644 %{SOURCE0} \
