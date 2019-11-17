@@ -12,16 +12,25 @@ Easy, configurable API mocking you can change on-the-fly
 
 %build
 whereis go
+echo ''
 export GOPATH=%{_builddir}/%{name}
+echo ''
 ls %{_builddir}/%{name}
+echo ''
 echo $GOPATH
+echo ''
 go get github.com/gorilla/mux
 go get github.com/json-iterator/go
 go get github.com/sirupsen/logrus
 go get gopkg.in/yaml.v2
 git clone https://github.com/patsevanton/mockify.git
+echo ''
+tree
+echo ''
 find . -name mockify
+echo ''
 cd %{_builddir}/%{name}/src/github.com/patsevanton/mockify-rpm
+echo ''
 # mkdir -p _build/src/https://github.com/patsevanton/mockify
 #cp ../SOURCES/main.go _build/src/https://github.com/patsevanton/mockify
 #export GOPATH=$(pwd)/_build
