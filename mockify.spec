@@ -15,8 +15,6 @@ whereis go
 echo ''
 export GOPATH=%{_builddir}/%{name}
 echo ''
-ls %{_builddir}/%{name}
-echo ''
 echo $GOPATH
 echo ''
 go get github.com/gorilla/mux
