@@ -22,7 +22,8 @@ go get github.com/json-iterator/go
 go get github.com/sirupsen/logrus
 go get gopkg.in/yaml.v2
 echo ''
-git clone https://github.com/patsevanton/mockify.git $GOPATH/src/mockify
+mkdir -p $GOPATH/src/github.com/patsevanton
+git clone https://github.com/patsevanton/mockify.git $GOPATH/src/github.com/patsevanton/mockify
 echo ''
 find . -name mockify
 echo ''
@@ -30,8 +31,7 @@ cd %{_builddir}
 echo ''
 ls
 echo ''
-# mkdir -p _build/src/https://github.com/patsevanton/mockify
-#cp ../SOURCES/main.go _build/src/https://github.com/patsevanton/mockify
+#cp ../SOURCES/main.go _build/src/github.com/patsevanton/mockify
 #export GOPATH=$(pwd)/_build
 #export PATH=$PATH:$(pwd)/_build/bin
 
