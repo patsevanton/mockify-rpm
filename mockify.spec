@@ -3,7 +3,7 @@ Version:        0.1
 Release:        1%{?dist}
 Summary:        Easy, configurable API mocking you can change on-the-fly
 License:        ASL 2.0 
-Source0:        main.go
+#Source0:        main.go
 BuildRequires:  golang
 BuildRequires:  tree
 
@@ -14,9 +14,10 @@ Easy, configurable API mocking you can change on-the-fly
 whereis go
 echo $GOPATH
 echo $GOROOT
+go get https://github.com/patsevanton/mockify-rpm
 # mkdir -p _build/src/https://github.com/patsevanton/mockify
 #cp ../SOURCES/main.go _build/src/https://github.com/patsevanton/mockify
-##export GOPATH=$(pwd)/_build
+#export GOPATH=$(pwd)/_build
 #export PATH=$PATH:$(pwd)/_build/bin
 
 #pushd _build/src/https://github.com/patsevanton/mockify
