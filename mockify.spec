@@ -29,16 +29,16 @@ pwd
 echo ''
 go build -o mockify $GOPATH/src/github.com/patsevanton/mockify/app/cmd/mockify.go
 echo ''
-ls
+ls -l
 
 #pushd _build/src/https://github.com/patsevanton/mockify
 #go build -o ../../../../../mockify
 #popd
 
-#%install
-#install -d %{buildroot}%{_bindir}
-#install -p -m 0755 ./mockify %{buildroot}%{_bindir}/mockify
+%install
+install -d %{buildroot}%{_bindir}
+install -p -m 0755 mockify %{buildroot}%{_bindir}/mockify
 
-#%files
-#%defattr(-,root,root,-)
-#%{_bindir}/mockify
+%files
+%defattr(-,root,root,-)
+%{_bindir}/mockify
