@@ -1,0 +1,151 @@
+---
+- route: "/102"
+  methods:
+    - GET
+  responses:
+    - uri: "/102"
+      method: GET
+      statusCode: 102
+      body:
+        message: 102 Processing\n
+
+        
+- route: "/204"
+  methods:
+    - GET
+  responses:
+    - uri: "/204"
+      method: GET
+      statusCode: 204
+      body:
+        message: 204 No Content\n
+
+- route: "/301"
+  methods:
+    - GET
+  responses:
+    - uri: "/301"
+      method: GET
+      statusCode: 301
+      body:
+        message: 301 Moved Permanently\n
+
+        
+- route: "/302"
+  methods:
+    - GET
+  responses:
+    - uri: "/302"
+      method: GET
+      statusCode: 302
+      body:
+        message: 302 Found\n
+
+
+- route: "/304"
+  methods:
+    - GET
+  responses:
+    - uri: "/304"
+      method: GET
+      statusCode: 304
+      body:
+        message: 304 Not Modified\n
+
+
+- route: "/400"
+  methods:
+    - GET
+  responses:
+    - uri: "/400"
+      method: GET
+      statusCode: 400
+      body:
+        message: 400 Bad Request\n
+
+
+- route: "/401"
+  methods:
+    - GET
+  responses:
+    - uri: "/401"
+      method: GET
+      statusCode: 401
+      body:
+        message: 401 Unauthorized\n
+
+
+- route: "/403"
+  methods:
+    - GET
+  responses:
+    - uri: "/403"
+      method: GET
+      statusCode: 403
+      body:
+        message: 403 Forbidden\n
+
+- route: "/404"
+  methods:
+    - GET
+  responses:
+    - uri: "/404"
+      method: GET
+      statusCode: 404
+      body:
+        message: 404 Not Found\n
+
+
+- route: "/405"
+  methods:
+    - GET
+  responses:
+    - uri: "/405"
+      method: GET
+      statusCode: 405
+      body:
+        message: 405 Method Not Allowed\n
+
+
+- route: "/408"
+  methods:
+    - GET
+  responses:
+    - uri: "/408"
+      method: GET
+      statusCode: 408
+      body:
+        message: 408 Request Timeout\n
+
+
+- route: "/500"
+  methods:
+    - GET
+  responses:
+    - uri: "/500"
+      method: GET
+      statusCode: 500
+      body:
+        message: 500 Internal Server Error\n
+
+
+- route: "/502"
+  methods:
+    - GET
+  responses:
+    - uri: "/502"
+      method: GET
+      statusCode: 502
+      body:
+        message: 502 Bad Gateway\n
+
+
+- route: "/503"
+  methods:
+    - GET
+  responses:
+    - uri: "/503"
+      method: GET
+      statusCode: 503
+      body:
+        message: 503 Service Unavailable\n

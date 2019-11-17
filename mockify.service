@@ -1,0 +1,15 @@
+[Unit]
+Description=Easy, configurable API mocking you can change on-the-fly
+After=network.target
+
+[Service]
+Type=simple
+User=mockify
+Group=mockify
+Environment="MOCKIFY_ROUTES=/etc/mockify/routes.json"
+ExecStart=/usr/bin/mockify
+ExecStop=/bin/kill -s SIGTERM $MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
