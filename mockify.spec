@@ -22,7 +22,7 @@ go get github.com/json-iterator/go
 go get github.com/sirupsen/logrus
 go get gopkg.in/yaml.v2
 echo ''
-git clone https://github.com/patsevanton/mockify.git $GOPATH/src
+git clone https://github.com/patsevanton/mockify.git $GOPATH/src/mockify
 echo ''
 find . -name mockify
 echo ''
