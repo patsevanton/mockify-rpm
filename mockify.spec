@@ -25,15 +25,11 @@ echo ''
 mkdir -p $GOPATH/src/github.com/patsevanton
 git clone https://github.com/patsevanton/mockify.git $GOPATH/src/github.com/patsevanton/mockify
 echo ''
-find . -name mockify
+pwd
 echo ''
-cd %{_builddir}
+go build -o mockify $GOPATH/src/github.com/patsevanton/mockify/app/cmd/mockify.go
 echo ''
 ls
-echo ''
-#cp ../SOURCES/main.go _build/src/github.com/patsevanton/mockify
-#export GOPATH=$(pwd)/_build
-#export PATH=$PATH:$(pwd)/_build/bin
 
 #pushd _build/src/https://github.com/patsevanton/mockify
 #go build -o ../../../../../mockify
