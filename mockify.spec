@@ -17,13 +17,15 @@ export GOPATH=%{_builddir}/%{name}
 echo ''
 echo $GOPATH
 echo ''
+echo ''
+tree
 go get github.com/gorilla/mux
 go get github.com/json-iterator/go
 go get github.com/sirupsen/logrus
 go get gopkg.in/yaml.v2
-git clone https://github.com/patsevanton/mockify.git
 echo ''
 tree
+git clone https://github.com/patsevanton/mockify.git
 echo ''
 find . -name mockify
 echo ''
