@@ -9,7 +9,16 @@
       body:
         message: 102 Processing\n
 
-        
+- route: "/200"
+  methods:
+    - GET
+  responses:
+    - uri: "/200"
+      method: GET
+      statusCode: 200
+      body:
+        message: 200 Ok\n
+
 - route: "/204"
   methods:
     - GET
