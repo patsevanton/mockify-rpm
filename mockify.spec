@@ -1,6 +1,6 @@
 Name:           mockify
-Version:        0.1
-Release:        3
+Version:        0.2
+Release:        1
 Summary:        Easy, configurable API mocking you can change on-the-fly
 License:        ASL 2.0 
 Source0:        mockify.service
